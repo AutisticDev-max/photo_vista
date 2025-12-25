@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoVista | Responsive Design Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Flexbox Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-camera"></i>
+                    <span>PhotoVista</span>
+                </div>
+                
+                <!-- Navigation Links (Flexbox) -->
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Flexbox -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Capture Beautiful Moments</h1>
+                    <p>Explore stunning photography from around the world. A responsive showcase of nature, cities, and culture.</p>
+                    <a href="#gallery" class="btn">View Gallery</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beautiful landscape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery with CSS Grid -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <p class="section-subtitle">A responsive grid layout showcasing beautiful photography</p>
+            
+            <div class="grid-container">
+                <!-- Grid Item 1 -->
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mountain landscape">
+                    <div class="grid-content">
+                        <h3>Mountain Majesty</h3>
+                        <p>Breathtaking views of snow-capped peaks</p>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 2 -->
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cityscape at night">
+                    <div class="grid-content">
+                        <h3>Urban Lights</h3>
+                        <p>City skyline illuminated at dusk</p>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 3 -->
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Forest path">
+                    <div class="grid-content">
+                        <h3>Forest Path</h3>
+                        <p>Sunlight filtering through dense woods</p>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 4 -->
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beach sunset">
+                    <div class="grid-content">
+                        <h3>Ocean Sunset</h3>
+                        <p>Golden hour at the beach</p>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 5 -->
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Desert dunes">
+                    <div class="grid-content">
+                        <h3>Desert Dunes</h3>
+                        <p>Sand patterns in the golden desert</p>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 6 -->
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Misty mountains">
+                    <div class="grid-content">
+                        <h3>Misty Peaks</h3>
+                        <p>Mountains shrouded in morning mist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Layout with CSS Grid -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">A responsive blog layout using CSS Grid</p>
+            
+            <div class="blog-grid">
+                <!-- Featured Article (takes 2 columns) -->
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aurora borealis">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Nature</span>
+                        <h3>Chasing the Northern Lights</h3>
+                        <p>An unforgettable journey to witness the aurora borealis in all its glory. Tips for photographers and travelers alike.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> April 15, 2025</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Regular Blog Cards -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coastal photography">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Photography Tips</span>
+                        <h3>Mastering Coastal Photography</h3>
+                        <p>Learn how to capture stunning coastal scenes with proper lighting and composition techniques.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 28, 2025</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Forest photography">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Nature</span>
+                        <h3>Exploring Ancient Forests</h3>
+                        <p>A photographic journey through some of the world's oldest and most majestic forest ecosystems.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2025</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Urban photography">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Urban</span>
+                        <h3>Cityscapes After Dark</h3>
+                        <p>Techniques for capturing the vibrant energy of cities at night with long exposure photography.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 22, 2025</span>
+                            <span><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section with Flexbox -->
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose PhotoVista?</h2>
+            
+            <div class="features-container">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Our layouts adapt perfectly to all screen sizes, from desktop to mobile devices.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Loading</h3>
+                    <p>Optimized images and clean code ensure lightning-fast page load times.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Beautiful Design</h3>
+                    <p>Carefully crafted UI with attention to detail and modern design principles.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Clean Code</h3>
+                    <p>Built with semantic HTML, modern CSS, and best practices for maintainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@photovista.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234578905855</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Design Street, Creative City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="newsletter">
+                    <h3>Subscribe to Newsletter</h3>
+                    <p>Get the latest photography tips and featured galleries directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-camera"></i>
+                    <span>PhotoVista</span>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 PhotoVista. All rights reserved. | Responsive Web Design Demo</p>
+                <p>Created with Flexbox & CSS Grid</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation (Hidden by default) -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <span>Menu</span>
+            <div class="close-mobile-nav">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Simple JavaScript for mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const closeMobileNav = document.querySelector('.close-mobile-nav');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+            
+            // Open mobile menu
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileNav.style.display = 'block';
+                setTimeout(() => {
+                    mobileNav.classList.add('active');
+                }, 10);
+            });
+            
+            // Close mobile menu
+            closeMobileNav.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                setTimeout(() => {
+                    mobileNav.style.display = 'none';
+                }, 300);
+            });
+            
+            // Close mobile menu when clicking links
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileNav.classList.remove('active');
+                    setTimeout(() => {
+                        mobileNav.style.display = 'none';
+                    }, 300);
+                });
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
